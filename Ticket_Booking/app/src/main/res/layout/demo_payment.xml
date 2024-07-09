@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#202020"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-1dp"
+        android:background="@drawable/button_gradient"
+        android:scaleType="fitXY" />
+
+    <TextView
+android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/card_information"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/Card_number"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/stsrted"
+        android:gravity="center"
+        android:hint="@string/card_number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#09203F"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/Month_year"
+        android:layout_width="159dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/Card_number"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="217dp"
+        android:background="@drawable/stsrted"
+        android:hint="@string/mm_yy"
+        android:textAlignment="center"
+        android:inputType="date"
+        android:textColor="#09203F"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/CVC"
+        android:layout_width="171dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/Card_number"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/stsrted"
+        android:hint="@string/cvc"
+        android:textAlignment="center"
+        android:textColor="#09203F"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/confirmPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@+id/CVC"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="74dp"
+        android:background="@drawable/button_gradient"
+        android:padding="10dp"
+        android:text="@string/confirm_payment"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

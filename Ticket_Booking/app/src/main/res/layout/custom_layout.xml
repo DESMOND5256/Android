@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#202020"
+    android:layout_height="match_parent">
+
+    <!-- Spinner for class selection -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="346dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@drawable/button_gradient"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="120dp"
+        android:gravity="center"
+        android:text="@string/select_your_seat"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/classSpinner"
+        android:layout_width="249dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/selected"
+        android:dropDownSelector="@drawable/selected"
+        android:popupBackground="@drawable/selected"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:background="@drawable/button_gradient"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="95dp"
+        android:text="@string/confirm"
+        android:textSize="18sp" />
+
+</RelativeLayout>

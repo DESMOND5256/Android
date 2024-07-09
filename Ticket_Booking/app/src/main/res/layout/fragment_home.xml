@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/book_ticket"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- AutoCompleteTextViews for "From" and "To" locations -->
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="404dp"
+        android:layout_height="737dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <!-- TextInputLayout for "From" location -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UI_from"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/from"
+            android:textColorHint="@color/white"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_text_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select"
+                android:dropDownWidth="350dp"
+                android:dropDownVerticalOffset="10dp"
+                android:dropDownSelector="#DCD4D4"
+                android:inputType="none"
+                android:popupBackground="@drawable/selected"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="italic|bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="@drawable/movement"
+            android:backgroundTint="@color/white" />
+
+        <!-- TextInputLayout for "To" location -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UI_to"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/to"
+            android:textColorHint="@color/white"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_text_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select"
+                android:dropDownWidth="350dp"
+                android:dropDownVerticalOffset="10dp"
+                android:dropDownSelector="#DCD4D4"
+                android:inputType="none"
+                android:popupBackground="@drawable/selected"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="italic|bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextView for "Date of Departure" -->
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/date_of_departure"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <!-- DatePicker -->
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="315dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/stsrted"
+            android:calendarTextColor="@color/white"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true" />
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- TextInputLayout for "Number of People" -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/UI_people"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="2dp"
+                android:hint="@string/no_of_pe"
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                app:hintAnimationEnabled="true"
+                app:hintTextColor="@color/white">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_text_people"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select"
+                    android:dropDownWidth="130dp"
+                    android:dropDownVerticalOffset="10dp"
+                    android:dropDownSelector="#DCD4D4"
+                    android:inputType="none"
+                    android:popupBackground="@drawable/selected"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="italic|bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/UI_class"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:hint="@string/choose_class"
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                app:hintTextColor="@color/white">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_text_class"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/select"
+                    android:dropDownWidth="300dp"
+                    android:dropDownVerticalOffset="10dp"
+                    android:dropDownSelector="#DCD4D4"
+                    android:inputType="none"
+                    android:popupBackground="@drawable/selected"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="italic|bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Pay_up"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/button_gradient"
+            android:padding="8dp"
+            android:text="Pay Up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Ticket_Booking</string>
+    <string name="see_where_you_can_travel_to_right_now_and_find_the_best_deals_accross_stations">see where you can travel to right now and find the best deals across stations</string>
+    <string name="choose_your_sation_and_find_the_best_deals">Choose your station and find the best deals</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sing_in">Sing in</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="welcome">Welcome!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="book_ticket">Book Ticket</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="date_of_departure">Date of Departure</string>
+    <string name="no_of_pe">No of..</string>
+    <string name="choose_class">Choose Class...</string>
+    <string name="choose_your_seat">...Choose your seat</string>
+    <string name="select_your_class">Select Your Class</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_your_seat">Select your Seat</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="card_information">Card Information</string>
+    <string name="card_number">Card_Number</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="cvc">CVC</string>
+    <string name="confirm_payment">Confirm Payment</string>
+
+    <!-- Array of first class seats -->
+    <string-array name="first_class_seats_array">
+        <item>Seat 1A</item>
+        <item>Seat 1B</item>
+        <item>Seat 1C</item>
+        <!-- Add more seats as needed -->
+    </string-array>
+
+    <!-- Array of business class seats -->
+    <string-array name="business_class_seats_array">
+        <item>Seat 2A</item>
+        <item>Seat 2B</item>
+        <item>Seat 2C</item>
+        <!-- Add more seats as needed -->
+    </string-array>
+
+    <!-- Array of economy class seats -->
+    <string-array name="economy_class_seats_array">
+        <item>Seat 3A</item>
+        <item>Seat 3B</item>
+        <item>Seat 3C</item>
+        <!-- Add more seats as needed -->
+    </string-array>
+
+    <!-- Array of second class seats -->
+    <string-array name="second_class_seats_array">
+        <item>Seat 4A</item>
+        <item>Seat 4B</item>
+        <item>Seat 4C</item>
+        <!-- Add more seats as needed -->
+    </string-array>
+
+    <!-- Array of sleeper class seats -->
+    <string-array name="sleeper_class_seats_array">
+        <item>Seat 5A</item>
+        <item>Seat 5B</item>
+        <item>Seat 5C</item>
+        <!-- Add more seats as needed -->
+    </string-array>
+
+    <!-- Array of coach class seats -->
+    <string-array name="coach_class_seats_array">
+        <item>Seat 6A</item>
+        <item>Seat 6B</item>
+        <item>Seat 6C</item>
+        <!-- Add more seats as needed -->
+    </string-array>
+</resources>
