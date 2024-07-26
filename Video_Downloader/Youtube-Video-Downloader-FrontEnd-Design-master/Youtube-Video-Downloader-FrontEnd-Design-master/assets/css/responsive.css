@@ -1,0 +1,158 @@
+@media only screen and (max-width: 475px) {
+  .container {
+    width: 100%;
+    padding: 0px 0vw;
+  }
+  .nav {
+    height: 60px;
+  }
+  .nav-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .nav-logo img {
+    height: 40px;
+  }
+  .nav-logo p {
+    font-size: 10px;
+    font-weight: 700;
+    color: #494949;
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 14px;
+  }
+  .nav-btn {
+    padding: 10px 10px;
+    border-radius: 0;
+    text-align: left;
+    height: 40px;
+    width: 40px;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn img {
+    height: 20px;
+  }
+  .nav-btn p {
+    display: none;
+  }
+
+  .heading {
+    padding-top: 70px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .tagline {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+  form {
+    display: flex;
+    gap: 15px;
+    padding: 50px 15px;
+  }
+
+  .input-link {
+    width: 90vw;
+    font-size: 15px;
+    height: 45px;
+    padding: 15px;
+  }
+
+  .input-quality {
+    width: 50vw;
+    height: 45px;
+  }
+
+  .howitworks ul {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .howitworks ul li p {
+    font-size: 14px;
+  }
+
+  .circle {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 475px) {
+}
+
+@media only screen and (min-width: 476px) and (max-width: 768px) {
+  .howitworks ul {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+  .howitworks ul li p {
+    font-size: 14px;
+  }
+
+  .circle {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 25px 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .howitworks ul {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+  .howitworks ul li p {
+    font-size: 14px;
+  }
+
+  .circle {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 25px 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .howitworks ul {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+  .howitworks ul li p {
+    font-size: 18px;
+  }
+
+  .circle {
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+  }
+  .footer {
+    padding: 25px 60px;
+  }
+}
